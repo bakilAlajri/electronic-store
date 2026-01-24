@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تفاصيل الطلب</title>
+</head>
+<body>
+
+<h2>تفاصيل الطلب رقم {{ order.id }}</h2>
+
+<hr>
+
+<h3>معلومات العميل</h3>
+<p><strong>الاسم:</strong> {{ order.full_name }}</p>
+<p><strong>الهاتف:</strong> {{ order.phone }}</p>
+<p><strong>العنوان:</strong> {{ order.address }}</p>
+<p><strong>الإجمالي:</strong> {{ order.total_price }} ر.س</p>
+
+<hr>
+
+<h3>المنتجات</h3>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>المنتج</th>
+        <th>السعر</th>
+        <th>الكمية</th>
+        <th>الإجمالي</th>
+    </tr>
+
+    {% for item in items %}
+    <tr>
+        <td>{{ item.product.name }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price|floatformat:2|add:""|floatformat }} × {{ item.quantity }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<a href="{% url 'admin_orders' %}">⬅ الرجوع لقائمة الطلبات</a>
+
+</body>
+</html>

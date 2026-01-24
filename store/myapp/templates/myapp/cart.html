@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>السلة</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">🔵 MyStore</a>
+
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">المنتجات</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'cart' %}">السلة 🛒</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'offers' %}">العروض</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">تسجيل الدخول</a></li>
+
+            <!-- 🟢 عدّاد السلة -->
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'cart' %}">
+                    🛒 السلة
+                    <span id="cart-counter" class="badge bg-warning text-dark">
+                        {{ cart_items|length }}
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container py-5">
+
+    <h2 class="mb-4 fw-bold">🛒 سلة المشتريات</h2>
+
+    {% if cart_items %}
+    <table class="table table-bordered table-hover shadow-sm bg-white align-middle">
+        <thead class="table-primary">
+            <tr>
+                <th>المنتج</th>
+                <th>الصورة</th>
+                <th>الكمية</th>
+                <th>السعر</th>
+                <th>الإجمالي</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in cart_items %}
+            <tr data-id="{{ item.product.id }}">
+                
+                <td class="fw-bold">{{ item.product.name }}</td>
+
+                <td width="100">
+                    {% if item.product.image %}
+                       <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                    {% else %}
+                        <img src="{% static 'myapp/image/no-image.png' %}" alt="لا توجد صورة">
+                    {% endif %}
+                    
+                   
+                    {% comment %} <img src="{{ item.product.image.url }}" class="img-fluid rounded" style="height:75px;"> {% endcomment %}
+                </td>
+
+                <td width="120">
+                    <input type="number"
+                           class="form-control text-center quantity-input"
+                           value="{{ item.quantity }}" min="1">
+                </td>
+
+                <td>{{ item.product.price }} ر.س</td>
+
+                <td class="item-total text-success fw-bold">
+                    {{ item.total }} ر.س
+                </td>
+
+                <td>
+                    <a href="{% url 'remove_from_cart' item.product.id %}" class="btn btn-danger btn-sm"> <i class="fa fa-trash"></i> حذف</a>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- القسم الجانبي -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+
+            <!-- كود خصم -->
+            <div class="card p-3 shadow-sm mb-3">
+                <h5 class="fw-bold mb-2">🎟 كود خصم</h5>
+                <input type="text" id="coupon" class="form-control" placeholder="أدخل كود الخصم">
+                <button class="btn btn-dark w-100 mt-2" onclick="applyCoupon()">تطبيق</button>
+                <p id="coupon-result" class="mt-2 text-success"></p>
+            </div>
+
+            <!-- تكلفة الشحن -->
+            <div class="card p-3 shadow-sm">
+                <h5 class="fw-bold">🚚 تكلفة الشحن</h5>
+                <p class="mb-1">ثابت: <b>15 ر.س</b></p>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-3 shadow-sm">
+
+                <h4 class="fw-bold">💰 المجموع النهائي</h4>
+
+                <p class="mb-1">إجمالي السلة:
+                    <span id="cart-total">{{ total_price }}</span> ر.س
+                </p>
+
+                <p class="mb-1">الشحن:
+                    <span id="shipping">15</span> ر.س
+                </p>
+
+                <p class="fw-bold">المجموع بعد الخصم:
+                    <span id="grand-total" class="text-primary">{{ total_price|add:15 }}</span> ر.س
+                </p>
+
+                <!-- متابعة التسوق -->
+                <a href="{% url 'products' %}" class="btn btn-outline-primary w-100 mt-2">
+                    ↩ متابعة التسوق
+                </a>
+
+                <a href="{% url 'checkout' %}" class="btn btn-success btn-lg w-100 mt-3">
+                    <i class="fa fa-credit-card"></i> إكمال الدفع
+                </a>
+
+                <a href="{% url 'clear_cart' %}" class="btn btn-danger w-100 mt-2">
+                    <i class="fa fa-trash"></i> إفراغ السلة
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+    <div class="alert alert-warning text-center fs-5 py-3 shadow">
+        السلة فارغة حالياً 😢
+    </div>
+    {% endif %}
+
+</div>
+
+<!-- JS -->
+<script>
+
+// تحديث الكمية مباشرة
+document.querySelectorAll(".quantity-input").forEach(input => {
+    input.addEventListener("change", async function() {
+
+        const tr = this.closest("tr");
+        const productId = tr.dataset.id;
+        const newQty = this.value;
+
+        const response = await fetch(`/update_cart_quantity/${productId}/${newQty}/`);
+        const data = await response.json();
+
+        tr.querySelector(".item-total").textContent = data.item_total + " ر.س";
+
+        document.getElementById("cart-total").textContent = data.total_price;
+
+        updateGrandTotal();
+    });
+});
+
+// تطبيق كود خصم
+function applyCoupon() {
+    const code = document.getElementById("coupon").value;
+
+    if (code === "SALE20") {
+        document.getElementById("coupon-result").textContent = "تم تطبيق خصم 20% ✔";
+        couponValue = 0.20;
+    } else {
+        document.getElementById("coupon-result").textContent = "الكود غير صالح ❌";
+        couponValue = 0;
+    }
+
+    updateGrandTotal();
+}
+
+let couponValue = 0;
+
+// تحديث المجموع النهائي
+function updateGrandTotal() {
+    const total = parseFloat(document.getElementById("cart-total").textContent);
+    const shipping = 15;
+
+    const discount = total * couponValue;
+
+    const finalTotal = total + shipping - discount;
+
+    document.getElementById("grand-total").textContent = finalTotal.toFixed(2);
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

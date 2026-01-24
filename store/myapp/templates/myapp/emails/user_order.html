@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; direction: rtl; }
+        .box {
+            padding: 20px;
+            background: #16b02dff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>✔️ شكراً لطلبك {{ full_name }}</h2>
+
+<div class="box">
+    <p>لقد استلمنا طلبك بنجاح.</p>
+    <p><strong>رقم الطلب:</strong> {{ order.id }}</p>
+    <p><strong>إجمالي المبلغ:</strong> {{ total_price }} ريال</p>
+</div>
+
+<p>سنتواصل معك قريباً.</p>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "myapp/base.html" %}
+{% block content %}
+
+<div class="container" style="max-width:500px; margin:auto;">
+    <h2 class="text-center mb-4">✏️ تعديل المنتج</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <input class="form-control mb-3" name="name" value="{{ product.name }}">
+        <input class="form-control mb-3" name="price" value="{{ product.price }}">
+        <textarea class="form-control mb-3" name="description">{{ product.description }}</textarea>
+        <input class="form-control mb-3" name="category" value="{{ product.category }}">
+        <input class="form-control mb-3" name="brand" value="{{ product.brand }}">
+        <input type="file" class="form-control mb-3" name="image">
+
+        <button class="btn btn-primary w-100">💾 حفظ التعديلات</button>
+    </form>
+</div>
+
+{% endblock %}

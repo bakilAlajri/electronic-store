@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إضافة منتج</title>
+</head>
+<body>
+
+<h2>إضافة منتج جديد</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="اسم المنتج"><br>
+    <input type="number" name="price" placeholder="السعر"><br>
+    <input type="file" name="image"><br>
+    <button type="submit">حفظ</button>
+</form>
+
+{% comment %} <a href="{% url 'list_products' %}">⬅ رجوع</a> {% endcomment %}
+
+</body>
+</html>
+
+
+<h2>إضافة منتج</h2>
+
+

@@ -1,0 +1,136 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }}</title>
+
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/animations.css' %}">
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">🔵 MyStore</a>
+
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="{% url 'products' %}" class="nav-link">المنتجات</a></li>
+            <li class="nav-item"><a href="{% url 'cart' %}" class="nav-link">السلة 🛒</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">تسجيل الدخول</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PRODUCT PAGE -->
+<div class="container py-5">
+
+    <div class="row">
+
+        <!-- IMAGE GALLERY -->
+        <div class="col-md-6">
+
+            <div class="main-image mb-3">
+                <img src="{{ product.image.url }}" id="main-img" class="img-fluid rounded shadow-sm">
+            </div>
+
+            <div class="d-flex gap-2 mt-2">
+                <img src="{{ product.image.url }}" class="thumb-img rounded" 
+                    style="width: 80px; cursor:pointer;"
+                    onclick="document.getElementById('main-img').src=this.src">
+
+                {% if product.image2 %}
+                <img src="{{ product.image2.url }}" class="thumb-img rounded"
+                    style="width: 80px; cursor:pointer;"
+                    onclick="document.getElementById('main-img').src=this.src">
+                {% endif %}
+
+                {% if product.image3 %}
+                <img src="{{ product.image3.url }}" class="thumb-img rounded"
+                    style="width: 80px; cursor:pointer;"
+                    onclick="document.getElementById('main-img').src=this.src">
+                {% endif %}
+            </div>
+
+        </div>
+
+        <!-- PRODUCT INFO -->
+        <div class="col-md-6">
+
+            <h2 class="fw-bold">{{ product.name }}</h2>
+
+            <div class="d-flex align-items-center mb-2">
+                <div class="text-warning fs-4">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <span class="text-muted ms-2">(124 تقييم)</span>
+            </div>
+
+            <p class="text-primary fw-bold fs-3">{{ product.price }} ر.س</p>
+
+            <!-- STOCK -->
+            <p class="fw-bold">
+                {% if product.stock > 10 %}
+                    <span class="text-success">✓ متوفر في المخزون</span>
+                {% elif product.stock > 0 %}
+                    <span class="text-warning">⚠ باقي {{ product.stock }} قطع فقط!</span>
+                {% else %}
+                    <span class="text-danger">✖ غير متوفر حالياً</span>
+                {% endif %}
+            </p>
+
+            <!-- FEATURES -->
+            <h5 class="mt-4 fw-bold">مميزات المنتج:</h5>
+            <ul class="text-muted">
+                <li>✔ جودة عالية</li>
+                <li>✔ ضمان سنة كاملة</li>
+                <li>✔ شحن سريع</li>
+                <li>✔ مناسب لجميع الاستخدامات</li>
+            </ul>
+
+            <p class="text-muted">{{ product.description }}</p>
+
+            <!-- BUTTONS -->
+            <div class="d-flex gap-3 mt-4">
+
+                <a href="{% url 'add_to_cart' product.id %}" class="btn btn-success btn-lg px-4">
+                    <i class="fa fa-cart-plus"></i> إضافة للسلة
+                </a>
+
+                <button class="btn btn-outline-danger btn-lg">
+                    <i class="fa fa-heart"></i>
+                </button>
+
+                <a href="https://wa.me/?text=شاهد هذا المنتج: {{ request.build_absolute_uri }}" 
+                target="_blank" class="btn btn-outline-success btn-lg">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <p class="m-0">© {{ now|date:"Y" }} MyStore — جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

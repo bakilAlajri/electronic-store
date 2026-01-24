@@ -1,0 +1,859 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "transaction",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "staff_member_required",
+        "importPath": "django.contrib.admin.views.decorators",
+        "description": "django.contrib.admin.views.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.admin.views.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "quote_plus",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myapp.migrations.0001_initial",
+        "description": "myapp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Product',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=200)),",
+        "detail": "myapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "myapp.migrations.0002_order_orderitem",
+        "description": "myapp.migrations.0002_order_orderitem",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('myapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Order',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('full_name', models.CharField(max_length=200)),",
+        "detail": "myapp.migrations.0002_order_orderitem",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemInline",
+        "kind": 6,
+        "importPath": "myapp.admin",
+        "description": "myapp.admin",
+        "peekOfCode": "class OrderItemInline(admin.TabularInline):\n    model = OrderItem\n    readonly_fields = ('product', 'quantity', 'price')\n    extra = 0\n@admin.register(Order)\nclass OrderAdmin(admin.ModelAdmin):\n    list_display = ('id', 'full_name', 'phone', 'total_price', 'status', 'created_at')\n    list_filter = ('status', 'created_at')\n    search_fields = ('full_name', 'phone', 'id')\n    inlines = [OrderItemInline]",
+        "detail": "myapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderAdmin",
+        "kind": 6,
+        "importPath": "myapp.admin",
+        "description": "myapp.admin",
+        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    list_display = ('id', 'full_name', 'phone', 'total_price', 'status', 'created_at')\n    list_filter = ('status', 'created_at')\n    search_fields = ('full_name', 'phone', 'id')\n    inlines = [OrderItemInline]\n# @admin.register(Order)\n# class OrderAdmin(admin.ModelAdmin):\n#     list_display = ('id', 'full_name', 'phone', 'total_price', 'status' if hasattr(Order, 'status') else 'id')\n#     search_fields = ('full_name','phone','address')\n#     list_filter = ('created_at',) if hasattr(Order, 'created_at') else ()",
+        "detail": "myapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemAdmin",
+        "kind": 6,
+        "importPath": "myapp.admin",
+        "description": "myapp.admin",
+        "peekOfCode": "class OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('id','order','product','quantity','price')\n    search_fields = ('order__id','product__name')",
+        "detail": "myapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MyappConfig",
+        "kind": 6,
+        "importPath": "myapp.apps",
+        "description": "myapp.apps",
+        "peekOfCode": "class MyappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'myapp'",
+        "detail": "myapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "myapp.models",
+        "description": "myapp.models",
+        "peekOfCode": "class Product(models.Model):\n    name = models.CharField(max_length=200)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    description = models.TextField(blank=True)\n    image = models.ImageField(upload_to='products/')\n    category = models.CharField(max_length=100, blank=True)\n    brand = models.CharField(max_length=100, blank=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.name",
+        "detail": "myapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "myapp.models",
+        "description": "myapp.models",
+        "peekOfCode": "class Order(models.Model):\n    STATUS_CHOICES = [\n        ('pending', 'قيد الانتظار'),\n        ('processing', 'قيد المعالجة'),\n        ('shipped', 'تم الشحن'),\n        ('completed', 'مكتمل'),\n        ('cancelled', 'ملغى'),\n    ]\n    full_name = models.CharField(max_length=200)\n    address = models.TextField()",
+        "detail": "myapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "myapp.models",
+        "description": "myapp.models",
+        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)\n    product = models.ForeignKey('Product', on_delete=models.PROTECT)\n    quantity = models.PositiveIntegerField(default=1)\n    price = models.DecimalField(max_digits=10, decimal_places=2)  # price at time of order\n    def __str__(self):\n        return f\"{self.product.name} ({self.quantity})\"",
+        "detail": "myapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "myapp.urls",
+        "description": "myapp.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"send-test-email/\", views.send_test_email, name=\"send_test_email\"),\n    path('admin/orders/', views.orders_list, name='admin_orders'),\n    path('admin/orders/<int:order_id>/', views.order_detail_admin, name='admin_order_detail'),\n    path('', views.index, name='index'),\n    path('products/', views.products, name='products'),\n    path('product/<int:id>/', views.product_detail, name='product_detail'),\n    # CART\n    path('add-to-cart/<int:product_id>/', views.add_to_cart, name='add_to_cart'),\n    path('cart/', views.cart, name='cart'),",
+        "detail": "myapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def index(request):\n    products = Product.objects.all()[:8]\n    return render(request, 'myapp/index.html', {'products': products})\ndef products(request):\n    products = Product.objects.all()\n    return render(request, 'myapp/products.html', {'products': products})\ndef product_detail(request, id):\n    product = get_object_or_404(Product, id=id)\n    return render(request, 'myapp/product-detail.html', {'product': product})\n# ===============================",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def products(request):\n    products = Product.objects.all()\n    return render(request, 'myapp/products.html', {'products': products})\ndef product_detail(request, id):\n    product = get_object_or_404(Product, id=id)\n    return render(request, 'myapp/product-detail.html', {'product': product})\n# ===============================\n# صفحة الدفع Checkout\n# ===============================\ndef checkout(request):",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "product_detail",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def product_detail(request, id):\n    product = get_object_or_404(Product, id=id)\n    return render(request, 'myapp/product-detail.html', {'product': product})\n# ===============================\n# صفحة الدفع Checkout\n# ===============================\ndef checkout(request):\n    cart = request.session.get(\"cart\", {})\n    cart_items = []\n    total_price = 0",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "checkout",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def checkout(request):\n    cart = request.session.get(\"cart\", {})\n    cart_items = []\n    total_price = 0\n    for product_id, quantity in cart.items():\n        product = get_object_or_404(Product, id=int(product_id))\n        total = product.price * quantity\n        total_price += total\n        cart_items.append({\n            \"product\": product,",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "order_confirmation",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def order_confirmation(request, order_id):\n    order = Order.objects.get(id=order_id)\n    return render(request, \"myapp/order-confirmation.html\", {\n        \"order_id\": order_id,\n        \"customer_phone\": order.phone.replace(\" \", \"\"),\n        \"customer_name\": order.full_name,\n    })\ndef login_view(request):\n    return render(request, 'myapp/login.html')\ndef offers(request):",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def login_view(request):\n    return render(request, 'myapp/login.html')\ndef offers(request):\n    return render(request, 'myapp/offers.html')\n# ===============================\n# السلة\n# ===============================\ndef add_to_cart(request, product_id):\n    cart = request.session.get('cart', {})\n    product_id = str(product_id)",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "offers",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def offers(request):\n    return render(request, 'myapp/offers.html')\n# ===============================\n# السلة\n# ===============================\ndef add_to_cart(request, product_id):\n    cart = request.session.get('cart', {})\n    product_id = str(product_id)\n    cart[product_id] = cart.get(product_id, 0) + 1\n    request.session['cart'] = cart",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_to_cart",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def add_to_cart(request, product_id):\n    cart = request.session.get('cart', {})\n    product_id = str(product_id)\n    cart[product_id] = cart.get(product_id, 0) + 1\n    request.session['cart'] = cart\n    return redirect('cart')\ndef cart(request):\n    cart = request.session.get('cart', {})\n    cart_items = []\n    total_price = 0",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "cart",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def cart(request):\n    cart = request.session.get('cart', {})\n    cart_items = []\n    total_price = 0\n    for product_id, qty in cart.items():\n        product = get_object_or_404(Product, id=product_id)\n        item_total = product.price * qty\n        total_price += item_total\n        cart_items.append({\n            'product': product,",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "remove_from_cart",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def remove_from_cart(request, product_id):\n    cart = request.session.get('cart', {})\n    product_id = str(product_id)\n    if product_id in cart:\n        del cart[product_id]\n    request.session['cart'] = cart\n    return redirect('cart')\ndef clear_cart(request):\n    request.session['cart'] = {}\n    return redirect('cart')",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "clear_cart",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def clear_cart(request):\n    request.session['cart'] = {}\n    return redirect('cart')\ndef send_test_email(request):\n    send_mail(\n        subject=\"اختبار الإيميل\",\n        message=\"هذه رسالة اختبارية للتأكد من أن الإرسال يعمل 100%\",\n        from_email=settings.EMAIL_HOST_USER,\n        recipient_list=[getattr(settings, \"STORE_EMAIL\", \"bikaylalejri2024@gmail.com\")],\n        fail_silently=False,",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "send_test_email",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def send_test_email(request):\n    send_mail(\n        subject=\"اختبار الإيميل\",\n        message=\"هذه رسالة اختبارية للتأكد من أن الإرسال يعمل 100%\",\n        from_email=settings.EMAIL_HOST_USER,\n        recipient_list=[getattr(settings, \"STORE_EMAIL\", \"bikaylalejri2024@gmail.com\")],\n        fail_silently=False,\n    )\n    return HttpResponse(\"تم إرسال الإيميل بنجاح ✔️\")\n# ===============================",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "orders_list",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def orders_list(request):\n    orders = Order.objects.all().order_by('-id')\n    return render(request, \"myapp/admin/orders_list.html\", {\"orders\": orders})\n@staff_member_required\ndef order_detail_admin(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    items = OrderItem.objects.filter(order=order)\n    return render(request, \"myapp/admin/order_detail.html\", {\n        \"order\": order,\n        \"items\": items",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "order_detail_admin",
+        "kind": 2,
+        "importPath": "myapp.views",
+        "description": "myapp.views",
+        "peekOfCode": "def order_detail_admin(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    items = OrderItem.objects.filter(order=order)\n    return render(request, \"myapp/admin/order_detail.html\", {\n        \"order\": order,\n        \"items\": items\n    })",
+        "detail": "myapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "store.asgi",
+        "description": "store.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "store.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = 'django-insecure-78^pjqm#262x9hs)3kx+y1lt)lrt3%yiqlq@@(^=0ohuw8z=!='\nSECRET_KEY = os.environ.get(\"SECRET_KEY\")\nDEBUG = True\nDEBUG = os.environ.get(\"DEBUG\") == \"True\"\nALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-78^pjqm#262x9hs)3kx+y1lt)lrt3%yiqlq@@(^=0ohuw8z=!='\nSECRET_KEY = os.environ.get(\"SECRET_KEY\")\nDEBUG = True\nDEBUG = os.environ.get(\"DEBUG\") == \"True\"\nALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "SECRET_KEY = os.environ.get(\"SECRET_KEY\")\nDEBUG = True\nDEBUG = os.environ.get(\"DEBUG\") == \"True\"\nALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DEBUG = True\nDEBUG = os.environ.get(\"DEBUG\") == \"True\"\nALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DEBUG = os.environ.get(\"DEBUG\") == \"True\"\nALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "ALLOWED_HOSTS = [\"*\"]\nALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "ALLOWED_HOSTS = [os.environ.get(\"ALLOWED_HOSTS\")]\n# ================================\n# 📧 إعدادات الإيميل (Gmail SMTP)\n# ================================\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_HOST_USER = \"bikaylalejri2024@gmail.com\"\nEMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.getenv(\"EMAIL_HOST_PASSWORD\")\nDEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FROM_EMAIL",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = EMAIL_HOST_USER\n# ================================\n# التطبيقات\n# ================================\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'myapp',\n]\nMIDDLEWARE = [",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'store.urls'",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "ROOT_URLCONF = 'store.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / \"myapp\" / \"templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / \"myapp\" / \"templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STORE_EMAIL",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "STORE_EMAIL = \"bikaylalejri2024@gmail.com\"\nSTORE_WHATSAPP_NUMBER = \"+967730722167\"  \nWSGI_APPLICATION = 'store.wsgi.application'\n# ================================\n# قاعدة البيانات\n# ================================\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / \"db.sqlite3\",",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STORE_WHATSAPP_NUMBER",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "STORE_WHATSAPP_NUMBER = \"+967730722167\"  \nWSGI_APPLICATION = 'store.wsgi.application'\n# ================================\n# قاعدة البيانات\n# ================================\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / \"db.sqlite3\",\n    }",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'store.wsgi.application'\n# ================================\n# قاعدة البيانات\n# ================================\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / \"db.sqlite3\",\n    }\n}",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / \"db.sqlite3\",\n    }\n}\nDATABASES = {\n    'default': dj_database_url.config(default='sqlite:///db.sqlite3')\n}\n# ================================",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DATABASES = {\n    'default': dj_database_url.config(default='sqlite:///db.sqlite3')\n}\n# ================================\n# التحقق من كلمات المرور\n# ================================\nAUTH_PASSWORD_VALIDATORS = [\n    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},\n    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},\n    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},\n    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},\n    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},\n    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},\n]\n# ================================\n# اللغات\n# ================================\nLANGUAGE_CODE = 'ar'",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'ar'\nTIME_ZONE = 'Asia/Aden'\nUSE_I18N = True\nUSE_TZ = True\n# ================================\n# الملفات الثابتة\n# ================================\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "TIME_ZONE = 'Asia/Aden'\nUSE_I18N = True\nUSE_TZ = True\n# ================================\n# الملفات الثابتة\n# ================================\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# ================================\n# الملفات الثابتة\n# ================================\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "USE_TZ = True\n# ================================\n# الملفات الثابتة\n# ================================\nSTATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "STATIC_URL = \"/static/\"\nSTATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR / \"myapp/static\"]\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "MEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "store.settings",
+        "description": "store.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
+        "detail": "store.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "store.urls",
+        "description": "store.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('myapp.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)\nfrom django.conf import settings\nfrom django.conf.urls.static import static\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "store.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "store.wsgi",
+        "description": "store.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "store.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'store.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

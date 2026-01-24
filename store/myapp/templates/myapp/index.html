@@ -1,0 +1,435 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+{% comment %} 
+    {% if user.is_authenticated %}
+    <div style="float: right;">
+        👤 مرحبًا {{ user.username }}
+        |
+        <a href="{% url 'logout' %}">تسجيل خروج</a>
+    </div>
+    {% else %}
+    <a href="{% url 'login' %}">تسجيل دخول</a>
+    {% endif %} {% endcomment %}
+
+    <meta charset="UTF-8">
+    <title>الصفحة الرئيسية</title>
+
+    <!-- Bootstrap RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ملف CSS -->
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/animations.css' %}">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: linear-gradient(#0035ff32, #2a059184),
+                        url("https://i.imgur.com/GtY4VHy.jpeg") center/cover;
+            padding: 80px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .shadow-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(144, 14, 14, 0.08);
+        }
+
+        .team-img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .gallery-img {
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .faq-box {
+            border: 1px solid #05805fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <ul class="navbar-nav ms-auto">
+
+    {% if user.is_authenticated %}
+        <li class="nav-item">
+            <span class="nav-link">👤 {{ user.username }}</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">تسجيل خروج</a>
+        </li>
+    {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">تسجيل دخول</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'register' %}">إنشاء حساب</a>
+        </li>
+    {% endif %}
+
+</ul>
+
+
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">🔵 MyStore</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+
+                
+
+                <li class="nav-item"><a class="nav-link" href="#hero">الرئيسية</a></li>
+                {% comment %} <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">المميزات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">معرض الصور</a></li> {% endcomment %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">المنتجات</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'offers' %}">العروض</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'cart' %}">السلة 🛒</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">تسجيل الدخول</a></li>
+
+
+                {% comment %} {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <span class="nav-link">👤 {{ user.username }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">تسجيل خروج</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">تسجيل دخول</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">إنشاء حساب</a>
+                    </li>
+                {% endif %} {% endcomment %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+<!-- HERO SECTION -->
+<div class="container mt-4">
+    <div class="hero shadow d-flex flex-column justify-content-center align-items-center text-center"
+        style="padding: 70px; border-radius: 12px;
+                background: linear-gradient(#0059ff80, #005cff80),
+                url('https://i.imgur.com/yC3Rk4U.jpg') center/cover;
+                color: #fff;">
+        
+        <h1 class="fw-bold mb-3" style="font-size: 38px;">
+            مرحباً بك في متجري MyStore
+        </h1>
+
+        <p class="fs-5 mb-4">
+            أفضل المنتجات التقنية بأفضل الأسعار
+        </p>
+
+        <a href="{% url 'products' %}" 
+            class="btn btn-warning btn-lg"
+            style="padding: 12px 28px; font-size: 20px;">
+            ابدأ التسوق الآن
+        </a>
+    </div>
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5">
+<div class="container">
+    <h2 class="section-title">من نحن</h2>
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6 mb-6">
+            <p class="text-muted fs-5">
+                متجر MyStore هو متجر إلكتروني متخصص في المنتجات التقنية، نسعى إلى تقديم تجربة شراء
+                سلسة وراقية تلائم احتياجاتك اليومية. نؤمن أن الجودة هي الأساس، وأن التعامل المحترم
+                هو ما يميز المتاجر الناجحة.
+            </p>
+
+            <p class="text-muted fs-5">
+                هدفنا ليس فقط البيع، بل بناء علاقة ثقة طويلة مع عملائنا من خلال تقديم منتجات أصلية،
+                أسعار مدروسة، وخدمة ما بعد البيع.
+            </p>
+
+            <p class="text-muted fs-5">
+                نعمل بشكل يومي على تطوير خدماتنا وتحسين تجربة المستخدم لضمان رضاكم الكامل.
+            </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="{% static 'myapp/image/store1.jpg' %}"
+                alt="عن المتجر"
+                class="img-fluid shadow"
+                style="max-width:420px; border-radius:12px;">
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- OUR VISION -->
+<section class="py-5 bg-white">
+<div class="container">
+    <h2 class="section-title">رؤيتنا</h2>
+
+    <div class="shadow-box">
+        <p class="fs-5 text-muted">
+            نسعى لأن نكون المتجر الإلكتروني الأول في المنطقة، من خلال تقديم منتجات عالية الجودة،
+            وتوفير تجربة تسوق سهلة وممتعة، تعتمد على الاحترافية والوضوح والسرعة.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="py-5">
+<div class="container">
+    <h2 class="section-title">قيمنا</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="shadow-box text-center">
+                <i class="fa-solid fa-handshake-angle fa-3x text-primary mb-3"></i>
+                <h4 class="fw-bold mb-2">الاحترام</h4>
+                <p class="text-muted">نتعامل مع جميع العملاء بلباقة واحترام كامل.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow-box text-center">
+                <i class="fa-solid fa-medal fa-3x text-primary mb-3"></i>
+                <h4 class="fw-bold mb-2">الجودة</h4>
+                <p class="text-muted">نقدم منتجات أصلية، ونتأكد من فحصها قبل شحنها.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow-box text-center">
+                <i class="fa-solid fa-heart fa-3x text-primary mb-3"></i>
+                <h4 class="fw-bold mb-2">الشفافية</h4>
+                <p class="text-muted">الأسعار واضحة، والمعلومات دقيقة.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="py-5 bg-white">
+<div class="container">
+    <h2 class="section-title">المميزات</h2>
+
+    <div class="row text-center g-4">
+
+        <div class="col-md-4">
+            <div class="shadow-box h-100">
+                <i class="fa-solid fa-truck-fast fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">توصيل سريع</h5>
+                <p class="text-muted">نوصّل طلباتك بسرعة عالية وبعناية كاملة.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow-box h-100">
+                <i class="fa-solid fa-lock fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">دفع آمن</h5>
+                <p class="text-muted">وسائل دفع آمنة وموثوقة 100%.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow-box h-100">
+                <i class="fa-solid fa-headset fa-3x text-primary mb-3"></i>
+                <h5 class="fw-bold">خدمة عملاء</h5>
+                <p class="text-muted">دعم سريع ومحترم على مدار الساعة.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-5">
+<div class="container">
+    <h2 class="section-title">معرض الصور</h2>
+
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store2.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store3.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store4.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store5.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store8.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+        <div class="col-md-4">
+            <img src="{% static 'myapp/image/store7.jpg' %}" class="gallery-img w-100 shadow">
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team" class="py-5 bg-white">
+<div class="container">
+    <h2 class="section-title">فريق العمل</h2>
+
+    <div class="row text-center g-4">
+
+        <div class="col-md-6">
+            <div class="shadow-box">
+                <img src="{% static 'myapp/image/store10.jpg' %}" class="team-img mb-3 shadow">
+                <h5 class="fw-bold">bakeel Al-ejri</h5>
+                <p class="text-muted">مدير المتجر</p>
+                <h5 class="fw-bold">الرقم الاكاديمي : </h5>
+                <h5 class="fw-bold">25164192</h5>
+            </div>
+        </div>
+
+         <div class="col-md-6">
+            <div class="shadow-box">
+                <img src="{% static 'myapp/image/store6.png' %}" class="team-img mb-3 shadow">
+                <h5 class="fw-bold"> محمد علي</h5>
+                <p class="text-muted">موطف </p>
+                <h5 class="fw-bold">الرقم الاكاديمي : </h5>
+                <h5 class="fw-bold">25164098</h5>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-5">
+<div class="container">
+    <h2 class="section-title">الأسئلة الشائعة</h2>
+
+    <div class="faq-box">
+        <h5 class="fw-bold">هل المنتجات أصلية؟</h5>
+        <p class="text-muted">نعم، جميع المنتجات أصلية 100% وتخضع لفحص قبل الشحن.</p>
+    </div>
+
+    <div class="faq-box">
+        <h5 class="fw-bold">كم يستغرق التوصيل؟</h5>
+        <p class="text-muted">عادةً من 24 إلى 72 ساعة حسب المدينة.</p>
+    </div>
+
+    <div class="faq-box">
+        <h5 class="fw-bold">هل يمكن إرجاع المنتج؟</h5>
+        <p class="text-muted">نعم خلال 7 أيام بشرط بقاء المنتج على حالته الأصلية.</p>
+    </div>
+</div>
+</section>
+
+<!-- PAYMENT METHODS -->
+<section class="py-5 bg-white">
+<div class="container">
+    <h2 class="section-title">طرق الدفع المتاحة</h2>
+
+    <div class="row text-center g-4">
+        <div class="col-md-3">
+            <div class="shadow-box">
+                <i class="fa-solid fa-money-bill-wave fa-3x text-success mb-3"></i>
+                <p class="fw-bold">دفع عند الاستلام</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="shadow-box">
+                <i class="fa-solid fa-credit-card fa-3x text-primary mb-3"></i>
+                <p class="fw-bold">بطاقات بنكية</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="shadow-box">
+                <i class="fa-solid fa-wallet fa-3x text-warning mb-3"></i>
+                <p class="fw-bold">محافظ رقمية</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="shadow-box">
+                <i class="fa-solid fa-building-columns fa-3x text-info mb-3"></i>
+                <p class="fw-bold">تحويل بنكي</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white text-center p-4 mt-5">
+    <p class="m-0">© 2025 MyStore — جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{% static 'pages/js/main.js' %}"></script>
+<script src="{% static 'pages/js/cart.js' %}"></script>
+<script src="{% static 'pages/js/product-detail.js' %}"></script>
+<script src="{% static 'pages/js/navigation.js' %}"></script>
+
+</body>
+</html>
