@@ -1,0 +1,8 @@
+services:
+  - type: web service
+    name: my-store-4
+    env: python 3
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn store.wsgi:application"
+    pythonVersion: 3.11.9

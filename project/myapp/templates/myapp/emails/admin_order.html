@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; direction: rtl; }
+        .box {
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 10px;
+        }
+        .product {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h2>📦 طلب جديد رقم {{ order.id }}</h2>
+
+<div class="box">
+    <p><strong>الاسم:</strong> {{ full_name }}</p>
+    <p><strong>الهاتف:</strong> {{ phone }}</p>
+    <p><strong>العنوان:</strong> {{ address }}</p>
+    <p><strong>إجمالي الطلب:</strong> {{ total_price }} ريال</p>
+</div>
+
+<h3>🛒 تفاصيل المنتجات</h3>
+
+{% for item in cart_items %}
+<div class="product">
+    <strong>{{ item.product.name }}</strong>
+    <br>
+    الكمية: {{ item.quantity }} —
+    المجموع: {{ item.total }} ريال
+</div>
+{% endfor %}
+
+</body>
+</html>

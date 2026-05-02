@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <style>
+
+            body { font-family: Tahoma, Arial, sans-serif; direction: rtl; text-align: right; }
+            .container { max-width: 680px; margin: auto; padding: 20px; }
+            .header { background:#0d6efd; color:#fff; padding:20px; border-radius:8px 8px 0 0; }
+            .content { background:#fff; padding:20px; border:1px solid #eee; }
+            .footer { margin-top:12px; font-size:12px; color:#666; }
+            .items { margin-top:10px; }
+            .item{ padding:8px 0; border-bottom:1px solid #eee; }
+            .total { font-weight:700; font-size:18px; margin-top:12px; }
+            .btn { display:inline-block; padding:10px 16px; background:#198754;color:#fff;border-radius:6px;text-decoration:none;margin-top:10px; }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>تأكيد الطلب — متجرك</h2>
+        </div>
+
+    <div class="content">
+        <p>مرحبًا {{ full_name }},</p>
+        <p>شكرًا لطلبك! تم استلام طلبك ونحن الآن نعمل على معالجته. فيما يلي تفاصيل الطلب:</p>
+
+        <div class="items">
+            {% for item in cart_items %}
+            <div class="item">
+                {{ item.product.name }} — الكمية: {{ item.quantity }} — السعر: {{ item.total }} ر.س
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="total">الإجمالي: {{ total_price }} ر.س</div>
+
+        <p>رقم الطلب: <strong>{{ order_id }}</strong></p>
+
+        <a class="btn" href="{{ site_url }}">العودة للموقع</a>
+
+        <div class="footer">
+            <p>إذا كان لديك أي استفسار تواصل معنا عبر البريد أو الهاتف.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

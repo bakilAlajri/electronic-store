@@ -1,0 +1,24 @@
+/* Responsive */
+
+/* الهواتف */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .detail-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detail-image img {
+        width: 90%;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}

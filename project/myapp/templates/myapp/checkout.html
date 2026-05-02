@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الدفع</title>
+
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">🔵 MyStore</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">المنتجات</a></li>
+                <li class="nav-item"><a class="nav-link active" href="{% url 'cart' %}">السلة 🛒</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">تسجيل الدخول</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container py-5">
+
+<h2 class="fw-bold mb-4">💳 إتمام الدفع</h2>
+
+{% if error %}
+<div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+{% if cart_items %}
+
+<!-- 🔵 ملخص الطلب -->
+<div class="card shadow-sm p-3 mb-4">
+    <h5 class="fw-bold mb-3">🛍 ملخص الطلب</h5>
+
+    <ul class="list-group list-group-flush">
+        {% for item in cart_items %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ item.product.name }} × {{ item.quantity }}
+            <span class="text-primary fw-bold">{{ item.total }} ر.س</span>
+        </li>
+        {% endfor %}
+
+        <li class="list-group-item d-flex justify-content-between">
+            <span>سعر المنتجات</span>
+            <span id="subtotal">{{ total_price }} ر.س</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+            <span>الشحن</span>
+            <span id="shipping">20 ر.س</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+            <span>الخصم</span>
+            <span id="discount">0 ر.س</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between fw-bold fs-5">
+            <span>الإجمالي النهائي</span>
+            <span id="grand-total">{{ total_price|add:"20" }} ر.س</span>
+        </li>
+    </ul>
+</div>
+
+
+<!-- 🟢 كود الخصم -->
+<div class="card p-3 mb-4 shadow-sm" style="max-width:600px;">
+    <label class="fw-bold mb-2">🎁 إدخال كود خصم</label>
+
+    <div class="input-group">
+        <input type="text" id="coupon" class="form-control" placeholder="مثال: SAVE10">
+        <button class="btn btn-success" id="apply-coupon">تطبيق</button>
+    </div>
+
+    <div id="coupon-msg" class="mt-2 fw-bold"></div>
+</div>
+
+
+
+<form method="POST" class="card p-4 shadow-sm" style="max-width:600px;">
+    {%csrf_token%}
+    <div class="mb-3">
+        <label class="form-label fw-bold">الاسم الكامل</label>
+        <input type="text" name="full_name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">البريد الإلكتروني</label>
+        <input type="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">العنوان</label>
+        <input type="text" name="address" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">رقم الهاتف</label>
+        <input type="text" name="phone" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg w-100">
+        ✔ إرسال الطلب
+    </button>
+</form>
+
+{% else %}
+<div class="alert alert-warning">السلة فارغة.</div>
+{% endif %}
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- 🟡 حساب السعر (شحن + خصم) -->
+<script>
+let subtotal = {{ total_price }};
+let shipping = 20;
+let discountValue = 0;
+
+function updateTotal() {
+    const total = subtotal + shipping - discountValue;
+    document.getElementById("grand-total").textContent = total + " ر.س";
+}
+
+document.getElementById("apply-coupon").onclick = function () {
+    const code = document.getElementById("coupon").value.trim().toUpperCase();
+    const msg = document.getElementById("coupon-msg");
+
+    if (code === "SAVE10") {
+        discountValue = 10;
+        document.getElementById("discount").textContent = "10 ر.س";
+        msg.textContent = "✔ تم تطبيق خصم 10 ر.س";
+        msg.className = "text-success fw-bold";
+    } else {
+        discountValue = 0;
+        document.getElementById("discount").textContent = "0 ر.س";
+        msg.textContent = "❌ الكود غير صحيح";
+        msg.className = "text-danger fw-bold";
+    }
+
+    updateTotal();
+};
+
+// تحديث أول مرة
+updateTotal();
+</script>
+
+</body>
+</html>
